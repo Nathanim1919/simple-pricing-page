@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: #eee;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.box{
+    position: relative;
+    width: 60px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: rgb(107, 107, 212);
+}
+
+.box .inner_box{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: .2rem;
+    border-radius: 50%;
+    right: .2rem;
+    background-color: white;
+
+}
+
+.monthlly{
+    left: .2rem;
+}
+
+
+
+/* section 2  pricing boxes */
+
+.p_boxes{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.pbox{
+    display: grid;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    padding: 1rem auto;
+    gap: 0rem;
+    place-items: center;
+    width: 300px;
+    border-radius: 7px;
+    transition: transform .5s ease;
+    background-color: white;
+}
+.pbox h1{
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+.pbox p{
+    border-bottom: 1px solid rgb(194, 191, 191);
+    padding: 1rem;
+    width: 90%;
+}
+
+.pbox h1 span{
+    font-size: 3rem;
+}
+.pbox:hover{
+    background:linear-gradient(to bottom right,rgb(10, 41, 182),rgb(8, 92, 172));
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.change{
+    background:linear-gradient(to bottom right,rgb(10, 41, 182),rgb(8, 92, 172));
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.pbox:hover button{
+    color: white;
+}
+.pbox button{
+    width: 90%;
+    padding: .5rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid #eee;
+    margin: 1rem;
+    color: rgb(37, 37, 37);
+    letter-spacing: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.pbox button:hover{
+    background-color: white;
+    color: #333;
+    
+}
